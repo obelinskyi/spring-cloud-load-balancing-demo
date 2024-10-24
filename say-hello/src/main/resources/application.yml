@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: say-hello
+eureka:
+  instance:
+    prefer-ip-address: true
+    metadata-map:
+      cpu: 10
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:8070/eureka/
